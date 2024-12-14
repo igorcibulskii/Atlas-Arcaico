@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rowdies", cursive;
+  text-align: justify;
+}
+body {
+  background: url("/AtlasArcaico/imagens/background/fundo3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  background: rgba(39, 39, 39, 0.4);
+}
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+  z-index: 100;
+  margin-left: -40px;
+}
+.nav-logo p {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.nav-logo img {
+  width: 250px;
+  height: auto;
+  margin: -40px;
+  margin-right: 50px;
+}
+
+.nav-menu ul {
+  display: flex;
+}
+.nav-menu ul li {
+  list-style-type: none;
+}
+.nav-menu ul li .link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+  margin: 0 25px;
+}
+.link:hover,
+.active {
+  border-bottom: 2px solid #fff;
+}
+.nav-button a.btn {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 13px;
+  color: black;
+}
+
+.nav-button a.btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+#cadastroBtn {
+  margin-left: 15px;
+}
+.btn.white-btn {
+  background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn {
+  display: none;
+}
+
+.text-blk {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  line-height: 20px;
+  color: white;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-start;
+}
+
+.responsive-container-block.bigContainer {
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin: 0 0 0 0;
+}
+
+.responsive-container-block.Container {
+  max-width: 1320px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+
+.responsive-container-block.leftSide {
+  width: auto;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  flex-direction: column;
+  position: static;
+  margin-top: -60px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: -100px;
+  max-width: 300px;
+}
+
+.text-blk.heading {
+  font-size: 40px;
+  line-height: 64px;
+  font-weight: 900;
+  color: #f0f0f0;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+}
+
+.text-blk.btn {
+  color: rgb(0, 178, 235);
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(160, 121, 0, 0.2) 0px 12px 35px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+

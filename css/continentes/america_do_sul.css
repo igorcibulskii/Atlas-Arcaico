@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rowdies", cursive;
+}
+
+body {
+  background: url("/AtlasArcaico/imagens/background/fundo2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(39, 39, 39, 0.4);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+  z-index: 100;
+  margin-left: 70px;
+}
+
+.nav-logo p {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.nav-logo img {
+  width: 250px;
+  height: auto;
+  margin: -40px;
+  margin-right: 50px;
+}
+
+.nav-menu ul {
+  display: flex;
+  margin-right: 150px;
+}
+
+.nav-menu ul li {
+  list-style-type: none;
+}
+
+.nav-menu ul li .link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+  margin: 0 25px;
+}
+
+.link:hover,
+.active {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-button a.btn {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 13px;
+  color: black;
+  margin-left: 20px;
+}
+
+.nav-button a.btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  max-width: 100%;
+}
+
+.card {
+  min-width: 20%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 0 47px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-family: "Rowdies", cursive;
+  margin-top: -100px;
+}
+
+.card-image img {
+  border-radius: 50%;
+  width: 600px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-left: -120px;
+}
+
+.card-info h3 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.card-info p {
+  color: #e2e2e2;
+  font-size: 1em;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.card-info button {
+  padding: 10px 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+
+.card-info button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5em;
+  z-index: 20;
+}
+
+.prev {
+  left: 1px;
+}
+
+.next {
+  right: 1px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.search-container {
+  position: fixed;
+  bottom: 840px; /* Distância da parte inferior da tela */
+ left: 235px;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  width: 50%; /* Ajuste a largura conforme necessário */
+  max-width: 375px; /* Limita a largura máxima */
+  display: flex;
+  justify-content: center;
+  z-index: 10; /* Garante que fique acima de outros elementos */
+  
+}
+
+#searchInput {
+  width: 100%; /* A barra de pesquisa ocupará toda a largura do contêiner */
+  padding: 5px;
+  border: 1px solid #cccccc23;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  font-size: 14px;
+  
+  
+}
+
+#searchInput::placeholder {
+  color: #000000; /* Substitua #FF5733 pela cor desejada */
+   /* Ajuste o tamanho da fonte, se necessário */
+   font-family: "Poppins", sans-serif;
+   
+}
+#searchInput:focus {
+  outline: none; /* Remove a borda de foco */
+}
+

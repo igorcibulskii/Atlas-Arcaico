@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rowdies", cursive;
+}
+
+body {
+  background: url("/AtlasArcaico/imagens/background/background_atlas_arcaico.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(39, 39, 39, 0.4);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+  z-index: 100;
+}
+
+.nav-logo p {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.nav-logo img {
+  width: 250px;
+  height: auto;
+  margin: -40px;
+  margin-right: 50px;
+}
+
+.nav-menu ul {
+  display: flex;
+  margin-right: 150px;
+  margin: 10px;
+}
+
+.nav-menu ul li {
+  list-style-type: none;
+}
+
+.nav-menu ul li .link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+  margin: 0 25px;
+}
+
+.link:hover,
+.active {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-button a.btn {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 13px;
+  color: black;
+  margin: 10px;
+}
+
+.nav-button a.btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -100px;
+}
+
+.login-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  color: rgb(29, 27, 27);
+  font-family: "Poppins", sans-serif;
+}
+
+.avatar-circle {
+  width: 150px; /* Defina o tamanho do círculo */
+  height: 150px;
+  border-radius: 50%; /* Faz o contêiner ficar redondo */
+  overflow: hidden; /* Garante que o conteúdo se limite ao círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; /* Cor de fundo enquanto a imagem não carrega (opcional) */
+  margin: 0 auto; /* Centraliza */
+}
+
+.avatar-circle img {
+  width: 100%; /* Faz com que a imagem preencha todo o círculo */
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem seja cortada para caber no círculo */
+  display: block; /* Remove espaços indesejados em torno da imagem */
+}
+
+
+
+.avatar-circle label {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.avatar-circle label img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar-circle:hover {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.avatar-circle input[type="file"] {
+  display: none;
+}
+
+.login-card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.login-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.login-actions {
+  margin-top: 20px;
+}
+
+.login-actions a {
+  display: block;
+  text-decoration: none;
+  color: #0e0e0e;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.login-actions a:hover {
+  color: #191a19;
+}
