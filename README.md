@@ -1,5 +1,7 @@
 Atlas Arcaico é um projeto interativo que explora o fascinante mundo pré-histórico, destacando os continentes e os animais que habitaram a Terra em diferentes eras geológicas. Utilizando tecnologias modernas como HTML, CSS, JavaScript, PHP e MySQL, o projeto combina interatividade e detalhamento científico para fins educativos e informativos.
 
+Para ver a apresentação do projeto, assista ao vídeo no YouTube: [https://www.youtube.com/watch?v=SEU_VIDEO_ID](https://www.youtube.com/watch?v=IQhoUr2rs_w)
+
 Características principais:
 
 Exploração geográfica: Navegue por um mapa interativo para descobrir as características únicas de cada continente na pré-história.
